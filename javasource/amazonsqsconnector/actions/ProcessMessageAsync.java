@@ -41,8 +41,8 @@ public class ProcessMessageAsync extends CustomJavaAction<java.lang.Boolean>
 
 		// BEGIN USER CODE
 		Map<String, Object> inputMap = new HashMap<>();
-		inputMap.put("Message", __message);
-		inputMap.put("Queue", __queue);
+		inputMap.put("Message", message.getMendixObject());
+		inputMap.put("Queue", queue.getMendixObject());
 		Core.executeAsync(getContext(), microflow, true, inputMap);
 		return true;
 		// END USER CODE

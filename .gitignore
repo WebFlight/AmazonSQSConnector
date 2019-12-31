@@ -18,3 +18,4 @@ proxies
 .mendix-cache
 .settings
 .svn
+/target/

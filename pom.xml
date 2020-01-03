@@ -4,6 +4,7 @@
   <artifactId>AmazonSQSConnector</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
+  	<outputDirectory>deployment/run/bin</outputDirectory>
     <sourceDirectory>javasource</sourceDirectory>
     <resources>
       <resource>

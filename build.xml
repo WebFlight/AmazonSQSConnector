@@ -7,7 +7,7 @@
     <description>Amazon SQS Connector for Mendix</description>
     <target name="createRequiredLibs">
         <echo message="Create RequiredLib files for dependencies in ${basedir}\userlib."/>
-        <foreach param="file" target="touchRequiredLibFile">
+        <foreach param="file" target="touchRequiredLibFile" inheritall="true">
             <path>
                 <fileset dir="${basedir}\userlib" includes="*.jar" excludes="ant-*"/>
             </path>

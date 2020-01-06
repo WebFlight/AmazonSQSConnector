@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>AmazonSQSConnector</groupId>
+	<groupId>com.webflight</groupId>
 	<artifactId>AmazonSQSConnector</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
@@ -72,7 +72,23 @@
 						</goals>
 						<configuration>
 							<target>
-								<ant antfile="${project.basedir}/build.xml" />
+								<ant antfile="${project.basedir}/build.xml">
+									<target name="createRequiredLibs"/>
+								</ant>
+							</target>
+						</configuration>
+					</execution>
+					<execution>
+						<id>export-module-package</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<ant antfile="${project.basedir}/build.xml">
+									<target name="exportModulePackage"/>
+								</ant>
 							</target>
 						</configuration>
 					</execution>

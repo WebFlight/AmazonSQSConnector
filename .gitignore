@@ -1,8 +1,8 @@
-/javasource/com/mendix/core
-/javasource/system
-deployment
+javasource/com/mendix/core/
+javasource/system/
+deployment/
 
-releases
+releases/
 
 .classpath
 
@@ -18,4 +18,4 @@ proxies
 .mendix-cache
 .settings
 .svn
-/target/
+target/

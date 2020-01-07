@@ -15,10 +15,12 @@ import com.mendix.core.Core;
 import com.mendix.logging.ILogNode;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-
 import amazonsqsconnector.proxies.constants.Constants;
 import amazonsqsconnector.usecases.MessageFetcher;
 
+/**
+ * Starts infinite loop in which the fetching microflow is repeated after finishing. This prevents memory issues. Parallel fetching is initiated with a specified number of threads.
+ */
 public class InitializeMessageFetching extends CustomJavaAction<java.lang.Void>
 {
 	private java.lang.String fetchingMicroflow;

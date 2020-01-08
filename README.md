@@ -29,13 +29,28 @@ Welcome to the Mendix AmazonSQSConnector module. This module can be used in [Men
 * Delete messages in batch
 * Multi-threaded background polling for new messages
 
+# Configuration
+
+
 # Logging
 * The *AmazonSQSConnector* log node is available for logging. Set to Debug or Trace for more details.
 
 # Dependencies
-No userlib compile dependencies.
+* com.amazonaws/aws-java-sdk-sqs and its dependencies
 
 # Development notes
+
+## Build
+Apache Maven and Ant are used to manage dependencies, copy those in the userlib folder and create the module package. To collect dependencies in the userlib folder, make sure Maven is installed and run the command below.
+```
+mvn clean package
+```
+To create a module package in the release folder, run the following command:
+```
+mvn clean install
+```
+
+## Contributions
 * For contributions, fork the repository, make changes, fix unit tests with 100% coverage and issue a pull request to the develop branch (Gitflow).
 * To report bugs or request features, please open an issue in the repository.
 

@@ -66,7 +66,7 @@
 				<executions>
 					<execution>
 						<id>label-dependencies</id>
-						<phase>package</phase>
+						<phase>install</phase>
 						<goals>
 							<goal>run</goal>
 						</goals>
@@ -80,7 +80,7 @@
 					</execution>
 					<execution>
 						<id>export-module-package</id>
-						<phase>package</phase>
+						<phase>install</phase>
 						<goals>
 							<goal>run</goal>
 						</goals>

@@ -48,4 +48,4 @@ mvn clean install
 * For contributions, fork the repository, make changes, fix unit tests with 100% coverage and issue a pull request to the develop branch (Gitflow).
 * To report bugs or request features, please open an issue in the repository.
 
- [1]: docs/logo.png
+ [1]: doc/logo.png

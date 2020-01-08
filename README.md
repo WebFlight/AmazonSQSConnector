@@ -8,9 +8,6 @@ Welcome to the Mendix AmazonSQSConnector module. This module can be used in [Men
 
 * [Getting Started](#getting-started)
 * [Features](#features)
-* [Job configuration](#job-configuration)
-* [Security roles](#security-roles)
-* [Not implemented](#not-implemented)
 * [Logging](#logging)
 * [Dependencies](#dependencies)
 * [Development notes](#development-notes)
@@ -29,9 +26,6 @@ Welcome to the Mendix AmazonSQSConnector module. This module can be used in [Men
 * Delete messages in batch
 * Multi-threaded background polling for new messages
 
-# Configuration
-
-
 # Logging
 * The *AmazonSQSConnector* log node is available for logging. Set to Debug or Trace for more details.
 
@@ -45,7 +39,7 @@ Apache Maven and Ant are used to manage dependencies, copy those in the userlib 
 ```
 mvn clean package
 ```
-To create a module package in the release folder, run the following command:
+To create a module package in the releases folder, run the following command:
 ```
 mvn clean install
 ```

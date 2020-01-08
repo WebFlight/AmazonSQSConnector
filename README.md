@@ -27,7 +27,7 @@ Welcome to the Mendix AmazonSQSConnector module. This module can be used in [Men
 * Receive messages (max 10)
 * Delete message
 * Delete messages in batch
-* Initiate multi-threaded background polling for new messages
+* Multi-threaded background polling for new messages
 
 # Logging
 * The *AmazonSQSConnector* log node is available for logging. Set to Debug or Trace for more details.

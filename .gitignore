@@ -19,3 +19,4 @@ proxies
 .settings
 .svn
 target/
+userlib/

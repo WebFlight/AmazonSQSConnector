@@ -20,10 +20,11 @@ public class MessageFetcher implements Runnable {
 		while(true) {
 			try {
 				IContext context = Core.createSystemContext();
-				Core.execute(context, prizeRequestFetchingMicroflow);
-			} catch (CoreException e) {
+				Core.microflowCall(this.prizeRequestFetchingMicroflow)
+					.execute(context);
+			} catch (Exception e) {
 				logger.error("Error during prize request fetching.", e);
 			}
-		}	
+		}
 	}
 }

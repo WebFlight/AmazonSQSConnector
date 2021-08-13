@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.webflight</groupId>
 	<artifactId>AmazonSQSConnector</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<properties>
 		<mendixInstallDir>C:\Program Files\Mendix</mendixInstallDir>
 		<mendixVersion>8.17.0.11170</mendixVersion>

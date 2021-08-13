@@ -105,7 +105,7 @@
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk-sqs</artifactId>
-			<version>1.11.699</version>
+			<version>1.12.45</version>
 		</dependency>
 		<dependency>
 			<groupId>com.mendix</groupId>
